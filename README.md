@@ -57,11 +57,10 @@ I am using an XGBoost model in my notebook. I have included my analysis in the n
 
 
 ## RESULTS
-A summary of your results and what you can learn from your model 
+As below, you can see that the model predictions all come very close to the analyst p
 
 You can include images of plots using the code below:
 ![Screenshot](model_stock_compare.png)
 
-## (OPTIONAL: CONTACT DETAILS)
-If you are planning on making your github repo public you may wish to include some contact information such as a link to your twitter or an email address. 
+
 
