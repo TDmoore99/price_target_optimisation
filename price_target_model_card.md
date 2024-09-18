@@ -1,11 +1,11 @@
 # Model Card
 
-See the [example Google model cards](https://modelcards.withgoogle.com/model-reports) for inspiration. 
-
 ## Model Description
+There is a sperate model for each stock symbol (AAPL, AMZN, GOOG, META).
+Each model is stored with its scaler in the ./models directory and an example use can be seen in the notebook Model_Test.ipynb
 
 **Input:** 
-The model takes historical stock price data and sentiment analysis as inputs. 
+The model takes historical stock price data and sentiment analysis as inputs.
 The features used include:
 - `day_of_week`: Day of the week of the close price to predict (0 = Monday, 6 = Sunday)
 - `month`: Month of the year of the close price to predict (1 = January, 12 = December)
@@ -67,12 +67,10 @@ The model uses Bayesian Optimization to fine-tune hyperparameters like `n_estima
 These hyperparameters are optimized based on the mean squared error (MSE) on a validation dataset.
 
 ## Performance
-The model’s performance is measured using the Mean Squared Error (MSE) on the test set. 
-For each stock symbol, the model is evaluated on historical data, predicting future prices. 
+The model’s performance is measured using the Mean Squared Error (MSE), Root Mean Squared Error, Mean Absolute Error (MAE) and (RMSE) and R<sup>2</sup>
+For each stock symbol, the model is evaluated on historical data, predicting future prices.
 
-Example performance metrics:
-- **MSE on test data**: 0.012 (average across symbols)
-- **Comparison with analyst predictions**: The model's predicted price is compared against actual prices and analyst target prices.
+The model is then tested using an example of a 12-month prediction actual prices and analyst target prices.
 
 A visualization of model performance comparing actual prices, predicted prices, and analyst target prices is shown below:
 
