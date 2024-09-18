@@ -7,6 +7,14 @@ It integrates financial data, such as historical stock prices, with sentiment an
 By combining these data sources, the model attempts to forecast future stock prices and compare its predictions with actual market performance and analyst price targets. 
 The project also utilizes Bayesian Optimization to fine-tune the model’s hyperparameters, enhancing its accuracy and efficiency. 
 
+The main project is within the file Stock_Analysis.ipynb.
+**Stock_Analysis.ipynb**
+This notebook evaluates different machine learning techniques, decides on the best one to use and then creates models for each of the 4 stocks in my analysis (AAPL,AMZN,GOOG,META)
+
+**Model_Test.ipynb**
+This notebook should only be run **after** the **Stock_Analysis.ipynb** notebook. This notebook imports models and can be used for testing without having to re-train models.
+
+
 ## DATA
 This notebook uses a variety of public domain data. 
 
