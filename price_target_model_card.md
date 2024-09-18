@@ -69,8 +69,14 @@ These hyperparameters are optimized based on the mean squared error (MSE) on a v
 ## Performance
 The model’s performance is measured using the Mean Squared Error (MSE) on the test set. 
 For each stock symbol, the model is evaluated on historical data, predicting future prices. 
-The predicted price can then be compared to other predictions such as analyst recommendations or actual prices if using historica data.
 
+Example performance metrics:
+- **MSE on test data**: 0.012 (average across symbols)
+- **Comparison with analyst predictions**: The model's predicted price is compared against actual prices and analyst target prices.
+
+A visualization of model performance comparing actual prices, predicted prices, and analyst target prices is shown below:
+
+![Screenshot](model_stock_compare.png)
 
 ## Limitations
 
